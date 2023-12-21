@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js.js"></script>
+    <title>Страница 3</title>
+</head>
+<body>
+<header>
+    <img src="logo.jpg" alt="Логотипчик" onclick="window.location.href='index.html'">
+</header>
+<nav>
+    <ul>
+        <li><a href="page1.html">Страница 1</a></li>
+        <li><a href="page2.html">Страница 2</a></li>
+        <li><a href="page3.html">Страница 3</a></li>
+    </ul>
+</nav>
+<section>
+    <h1>Страница 3</h1>
+    <img class="animation" src="image3.jpg" alt="Картинка 3">
+    <p>Это аватарка Дениса.Вы его  может уже позабыли.</p>
+    <a><br><br>Сумма чисел прогулов Дениса
+    <input type="text" id="num1"> +
+    <input type="text" id="num2">
+
+    <button onclick="calc()">Посчитать</button>
+
+    <form name="forma1">Укажите ваш пол:<br>
+        <input type="radio" name="sex" value="man" checked> мужской
+        <input type="radio" name="sex" value="woman"> женский
+    </form>
+
+    <form name="forma1">Какой язык вы хотите изучать:
+        <select name="language" size="1">
+            <option selected value="html">html
+            <option value="php">php
+            <option value="java">java
+            <option value="kotlin">kotlin
+            <option value="python">python
+        </select><br><br>
+    </form>
+
+    <form name="forma1">
+        <label for="load">Выберите файл: </label>
+        <input type="file" name="load" size="30">
+    </form>
+</section>
+<footer>
+    &copy; Никитино
+</footer>
+<head>
+    <meta charset="UTF-8">
+    <title>3 фрейма</title>
+</head>
+<body>
+    <iframe id="frame1" src="https://daily.afisha.ru/infoporn/17673-on-nelyubimyy-rebenok-i-esche-6-istoriy-uchiteley-o-tragichnoy-sudbe-ih-uchenikov/"></iframe>
+    <iframe id="frame2" src="https://weekend.rambler.ru/places/38502170-kak-babuiny-davilis-chipsami-v-teatre-gorkaya-pravda-o-studentah-kr/"></iframe>
+    <iframe id="frame3" src="http://morediva.com/zhiznennye-istorii-o-kotoryh-nevozmozhno-molchat/"></iframe>
+
+    <script>
+        // Получаем ссылки на фреймы
+        var frame1 = document.getElementById("frame1");
+        var frame2 = document.getElementById("frame2");
+        var frame3 = document.getElementById("frame3");
+
+        // Устанавливаем атрибуты фреймов
+        frame1.width = "500px";
+        frame1.height = "500px";
+
+        frame2.width = "500px";
+        frame2.height = "500px";
+
+        frame3.width = "500px";
+        frame3.height = "500px";
+    </script>
+</body>
+</body>
+</html>
